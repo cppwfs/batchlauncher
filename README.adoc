@@ -1,0 +1,35 @@
+= Spring Boot Batch Job Launcher
+
+This is a Spring Boot Web application that will launch the specified job based on the name entered in for the jobId parameter.
+There are currently 2 jobs supported in this sample release: Job1 and Job2.
+
+== Requirements:
+
+* Java 17 or Above
+
+
+== Build:
+
+[source,shell]
+----
+mvn clean package
+----
+
+== Run:
+
+[source,shell]
+----
+java -jar target /batchlauncher-0.0.1-SNAPSHOT.jar
+----
+
+== Launching Jobs:
+
+=== Launch Job1
+----
+http://localhost:8080/launchbatch?jobId=job1
+----
+
+=== Launch Job2
+----
+http://localhost:8080/launchbatch?jobId=job2
+----
